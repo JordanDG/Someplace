@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  @apply ease-in-out;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #333;
+  @apply text-white font-medium m-8;
+}
+
+h1, h2, h3 {
+  @apply font-bold text-primary text-lg;
+}
+
+main {
+  @apply max-w-5xl my-12 mx-auto px-8;
+}
+
+main > h2 {
+  @apply mb-4 pb-2 text-base;
+}
+p > a {
+  @apply text-primary underline;
+}
+
+/* Navigation */
+nav {
+  @apply
+    pb-4
+    border-b-2 border-gray-200
+    flex items-center gap-10 
+    my-10 mx-auto 
+    max-w-5xl
+    flex-wrap;
+}
+
+nav a, nav span {
+  @apply font-medium text-white hover:ease-in-out;
+}
+
+nav a:hover {
+  @apply font-bold text-primary;
+}
+
+nav form {
+  @apply
+  w-11/12
+  lg:w-6/12
+  h-8
+  text-white
+  px-3
+  flex items-center gap-3
+  ml-2
+  md:ml-14
+}
+
+nav form input {
+  @apply
+  w-full
+  outline-none
+  h-8
+  rounded-md
+  px-3
+  text-black
+}
+
+nav form input:focus {
+  @apply shadow-lg
 }
