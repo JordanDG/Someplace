@@ -3,70 +3,174 @@
 @tailwind utilities;
 
 * {
-  @apply ease-in-out;
+  @apply
+  ease-in-out
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-cyan-700;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  @apply
+  bg-blue-950
+  shadow;
 }
 
 body {
-  background: #333;
-  @apply text-white font-medium m-8;
-}
-
-h1, h2, h3 {
-  @apply font-bold text-primary text-lg;
-}
-
-main {
-  @apply max-w-5xl my-12 mx-auto px-8;
-}
-
-main > h2 {
-  @apply mb-4 pb-2 text-base;
-}
-p > a {
-  @apply text-primary underline;
-}
-
-/* Navigation */
-nav {
   @apply
-    pb-4
-    border-b-2 border-gray-200
-    flex items-center gap-10 
-    my-10 mx-auto 
-    max-w-5xl
-    flex-wrap;
-}
-
-nav a, nav span {
-  @apply font-medium text-white hover:ease-in-out;
-}
-
-nav a:hover {
-  @apply font-bold text-primary;
-}
-
-nav form {
-  @apply
-  w-11/12
-  lg:w-6/12
-  h-8
   text-white
-  px-3
-  flex items-center gap-3
-  ml-2
-  md:ml-14
+  font-medium
+  m-8
+  bg-neutral-900
+  animate-SlideIn
 }
 
-nav form input {
+/* Nav */
+.Nav {
   @apply
   w-full
-  outline-none
-  h-8
-  rounded-md
-  px-3
-  text-black
+  h-28
+  flex
+  flex-col
+  justify-center
+  items-center
+  flex-nowrap
+  mb-8
+
+  lg:flex-row
+  lg:justify-between
+  lg:items-center
+  lg:w-4/5
+  lg:ml-[10%]
+  lg:mb-0
 }
 
-nav form input:focus {
-  @apply shadow-lg
+.Nav_Link {
+  @apply
+  mx-4
+  m-0
+  text-2xl
+  tracking-wide
+  border-b-4
+  border-transparent
+  text-slate-300
+  transition
+  ease-in-out
+  duration-500
+
+  lg:ml-20
+  lg:mr-0
+
+  hover:border-primary
+  hover:text-white
+}
+
+.Active {
+  @apply
+  border-primary
+  text-white
+}
+
+/* Scroll Component */
+.Scroll_Container {
+  @apply
+  flex
+  flex-row
+  items-center
+  justify-between
+  overflow-x-auto
+  h-60
+  w-full
+  animate-SlideIn
+
+  lg:w-4/5
+  lg:ml-[10%]
+}
+
+.Scroll_Tab {
+  @apply
+  bg-primary/80
+  shrink-0
+  rounded
+  m-5
+  p-5
+  h-44
+  w-96
+  drop-shadow-md
+  flex
+  flex-col
+  items-start
+  justify-start
+  transition
+  ease-in-out
+
+  lg:mx-10
+
+  hover:drop-shadow-lg
+  hover:cursor-pointer
+  hover:scale-95
+}
+
+.Scroll_Tab h1 {
+  @apply
+  font-bold
+  tracking-wide
+  text-blue-950
+  text-xl
+}
+
+.Scroll_Tab p {
+  @apply
+  font-normal
+  tracking-wide
+}
+
+.Scroll_Tab button {
+  @apply
+  bg-blue-950
+  rounded-md
+  drop-shadow-md
+  px-5
+  py-1
+  mt-2
+  transition
+  ease-in-out
+  border-2
+  border-white
+
+  hover:bg-blue-900
+}
+
+/* Reusables */
+.Title_Center {
+  @apply
+  text-primary
+  font-extrabold
+  text-4xl
+  tracking-wide
+  mt-4
+  text-center
+
+  lg:ml-[10%]
+  lg:w-4/5
+}
+
+.Text_Center {
+  @apply
+  mt-2
+  text-center
+  leading-6
+
+  lg:ml-[10%]
+  lg:w-4/5
 }
