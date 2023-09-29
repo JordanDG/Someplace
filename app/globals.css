@@ -30,9 +30,19 @@ body {
   @apply
   text-white
   font-medium
-  m-8
   bg-neutral-900
+  m-8
   animate-SlideIn
+}
+
+.Main_Container {
+  @apply
+  flex
+  flex-col
+  justify-center
+  items-start
+  flex-nowrap
+  h-[87vh]
 }
 
 /* Nav */
@@ -91,12 +101,12 @@ body {
   overflow-x-auto
   h-60
   w-full
-  animate-SlideIn
 
   lg:w-4/5
   lg:ml-[10%]
 }
 
+/* Scroll Tab */
 .Scroll_Tab {
   @apply
   bg-primary/80
@@ -152,25 +162,150 @@ body {
 }
 
 /* Reusables */
-.Title_Center {
+.Title_Left {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   @apply
   text-primary
-  font-extrabold
-  text-4xl
+  font-black
+  text-6xl
   tracking-wide
-  mt-4
+  mt-16
   text-center
+  w-full
 
   lg:ml-[10%]
   lg:w-4/5
+  lg:text-9xl
+  lg:text-left
 }
 
-.Text_Center {
+.Text_Left {
   @apply
+  text-xl
   mt-2
   text-center
-  leading-6
+  leading-8
+  font-bold
+  tracking-wide
 
   lg:ml-[10%]
+  lg:w-2/5
+  lg:text-2xl
+  lg:text-left
+}
+
+.Button_Left {
+  @apply
+  text-xl
+  bg-blue-950
+  border-2
+  border-white
+  rounded-md
+  mt-4
+  ml-[10%]
+  py-2
+  px-4
+  transition
+  ease-in-out
+
+  hover:bg-blue-900
+  hover:cursor-pointer
+}
+
+/* Video Container */
+.Video_Container {
+  @apply
+  flex
+  flex-col
+  items-start
+  flex-wrap
+  justify-center
+  h-96
+  w-full
+  relative
+
   lg:w-4/5
+  lg:ml-[10%]
+  lg:flex-row
+}
+
+.Video_Item {
+  @apply
+  mx-2.5
+  flex
+  flex-col
+  items-start
+  justify-start
+  mt-4
+}
+
+.Video_Thumbnail {
+  @apply
+  rounded-2xl
+  transition
+  ease-in-out
+  shadow-lg
+
+  hover:cursor-pointer
+  hover:shadow-2xl
+}
+
+.Video_Details {
+  @apply
+  flex
+  flex-row
+  items-start
+  justify-between
+  mt-1
+}
+
+.Video_Details_Main {
+  @apply
+  mt-2
+  ml-2
+  w-72
+}
+
+.Video_Details_Main h1 {
+  @apply
+  font-extrabold
+  text-xl
+}
+
+.Video_Details_Main p {
+  @apply
+  text-sm
+  text-gray-300
+}
+
+.Video_Details p:first-of-type {
+  @apply
+  mt-1
+}
+
+.Video_Author_Thumb {
+  @apply
+  rounded-full
+  mt-2
+
+  hover:cursor-pointer
+}
+
+.Video_Duration {
+  @apply
+  bg-gray-950/80
+  px-1
+  text-sm
+  text-right
+  float-right
+  mr-2
+}
+
+.Duration_Container {
+  @apply
+  w-[350px]
+  absolute
+  top-[185px]
 }

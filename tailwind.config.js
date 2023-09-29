@@ -23,7 +23,7 @@ module.exports = {
       animation: {
         FadeIn: 'FadeIn 1s forwards',
         SlideIn: 'SlideIn 1s forwards',
-      }
+      },
     },
   },
   plugins: [],

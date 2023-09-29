@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 /* Assets */
-import logo from './logo.png';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const Pathname = usePathname();
@@ -14,7 +14,7 @@ export default function Navbar() {
         <Image 
         src={logo}
         alt="Someplace Logo"
-        Width={300}
+        width={300}
         quality={100}
         />
         <div>

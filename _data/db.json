@@ -1,0 +1,34 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "Nish Kumar's Best Taskmaster Moments",
+      "author": "Taskmaster",
+      "video_author_url" : "https://yt3.ggpht.com/ytc/APkrFKbxAyTtYpKzsSNLjZBkRH4Jd3D-TinQTnKIV1Y7=s68-c-k-c0x00ffffff-no-rj",
+      "views": "430K views",
+      "published": "3 years ago",
+      "thumburl": "https://i.ytimg.com/vi/7edrzgR_BAc/maxresdefault.jpg",
+      "video_duration" : "10:54"
+    },
+    {
+      "id": "2",
+      "title": "SIDEMEN'S GOT TALENT: YOUTUBER EDITION",
+      "author": "Sidemen",
+      "video_author_url" : "https://yt3.ggpht.com/ytc/APkrFKbAU-BouQTH70l2R1-AedUykgMyZxFhpL2LPyhXeA=s68-c-k-c0x00ffffff-no-rj",
+      "views": "9.2M views",
+      "published": "4 months ago",
+      "thumburl": "https://i.ytimg.com/vi/3_3o0CyLcnc/maxresdefault.jpg",
+      "video_duration" : "1:01:12"
+    },
+    {
+      "id": "3",
+      "title": "Is it ok to carry a cat like a baby?",
+      "author": "Helpful Vancouver Vet",
+      "video_author_url" : "https://yt3.ggpht.com/ytc/APkrFKY8Ud1pbUiMWopvcWI-ud-5Py49GSmKA-InwO8B5w=s68-c-k-c0x00ffffff-no-rj",
+      "views": "3.7M views",
+      "published": "5 years ago",
+      "thumburl": "https://i.ytimg.com/vi/-wRdQmYXc8M/maxresdefault.jpg",
+      "video_duration" : "3:08"
+    }
+  ]
+}
